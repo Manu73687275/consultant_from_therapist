@@ -2,7 +2,7 @@ const mongoose=require("mongoose");
 const { number } = require("zod");
 
 
-mongoose.connect("mongodb+srv://Manu:Manu%40123@atlascluster.s7pr6p9.mongodb.net/consultant_from_therapist")
+mongoose.connect("enter your mongodb url")
 
 const userschema=mongoose.Schema({
     username:{
