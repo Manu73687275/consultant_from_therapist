@@ -95,10 +95,10 @@ router.post("/appointment", userMiddleware, async function (req, res) {
 
     
     const therapist_id = req.body.therapistId;
-    console.log("get body data",therapist_id)
+    //console.log("get body data",therapist_id)
     const userid = req.userid;
-    console.log("tid",therapist_id)
-    console.log("uid",userid)
+   // console.log("tid",therapist_id)
+   // console.log("uid",userid)
     const existing_appointment = await appointmentdata.findOne({
         therapist_id: therapist_id,
         customer_id: userid
@@ -113,7 +113,7 @@ router.post("/appointment", userMiddleware, async function (req, res) {
     const therapist=await therapistdata.findOne({
         _id:therapist_id
     })
-    console.log('ther',therapist)
+    //console.log('ther',therapist)
     const customer=await userdata.findOne({
         _id:userid
     })

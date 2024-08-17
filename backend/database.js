@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const { number } = require("zod");
+
 
 
 mongoose.connect("enter your mongodb url")
